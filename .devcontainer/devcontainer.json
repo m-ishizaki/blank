@@ -2,7 +2,9 @@
     "name": ".NET in Codespaces",
     "image": "mcr.microsoft.com/dotnet/sdk:9.0",
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "moby": false
+        },
         "ghcr.io/devcontainers/features/github-cli:1": {
             "version": "2"
         },
@@ -14,7 +16,7 @@
             "version": "none",
             "dotnetRuntimeVersions": "8.0",
             "aspNetCoreRuntimeVersions": "8.0"
-        }
+        }        
     },
     "customizations": {
         "vscode": {
